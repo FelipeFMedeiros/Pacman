@@ -253,7 +253,7 @@ class Ghost {
       0,
       2 * Math.PI
     );
-    canvasContext.stroke();
+    //canvasContext.stroke();
   }
 
   // GetMap - Quando o Pacman vai parar

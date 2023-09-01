@@ -33,7 +33,7 @@ let wallInnerColor = "black";
 let foodColor = "#FEB897";
 let score = 0;
 let ghosts = [];
-let ghostCount = 4;
+let ghostCount = 6;
 let lives = 3;
 let foodCount = 0;
 
