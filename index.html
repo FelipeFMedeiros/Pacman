@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
@@ -10,15 +10,18 @@
             rel="stylesheet"
             type="text/css"
         />
+        <link rel="stylesheet" href="style.css" type="text/css" />
         <link rel="shortcut icon" href="assets/pacman.ico" type="image/x-icon" />
     </head>
 
     <body style="margin: 0px; background-color: black">
-        <canvas id="canvas" width="500" height="500"></canvas>
+        <div class="container">
+            <canvas id="canvas" width="500" height="500"></canvas>
 
-        <div style="display: none">
-            <img id="animations" src="assets/animations.gif" alt="" />
-            <img id="ghosts" src="assets/ghost.png" alt="" />
+            <div style="display: none">
+                <img id="animations" src="assets/animations.gif" alt="" />
+                <img id="ghosts" src="assets/ghost.png" alt="" />
+            </div>
         </div>
 
         <script src="ghost.js"></script>
