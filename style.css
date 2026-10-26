@@ -1,11 +1,84 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #05050b;
+    font-family: 'Press Start 2P', 'Emulogic', monospace, sans-serif;
+    color: #ffffff;
+    min-height: 100dvh;
+    overflow-x: hidden;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .container {
-    /* Centralizando tudo*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    width: 100%;
+    padding: 14px 10px;
+    background: radial-gradient(circle at center, #111122 0%, #05050b 100%);
+    gap: 14px;
+}
+
+.game-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100dvh;
+}
+
+#canvas {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    box-shadow: 0 0 25px rgba(0, 50, 200, 0.35), 0 0 5px rgba(255, 255, 0, 0.2);
+    border: 3px solid #1a1a3a;
+    border-radius: 6px;
+    background-color: #000000;
+}
+
+.credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.credits-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: #8888aa;
+    text-decoration: none;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    padding: 7px 16px;
+    border-radius: 20px;
+    background: rgba(22, 22, 45, 0.65);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.credits-link:hover {
+    color: #00e5ff;
+    border-color: rgba(0, 229, 255, 0.5);
+    background: rgba(0, 229, 255, 0.12);
+    box-shadow: 0 0 16px rgba(0, 229, 255, 0.35), 0 2px 10px rgba(0, 0, 0, 0.6);
+    transform: translateY(-2px);
+}
+
+.github-icon {
+    width: 15px;
+    height: 15px;
+    fill: currentColor;
+    transition: transform 0.25s ease;
+    flex-shrink: 0;
+}
+
+.credits-link:hover .github-icon {
+    transform: scale(1.15) rotate(-6deg);
 }
