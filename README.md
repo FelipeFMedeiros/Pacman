@@ -108,4 +108,4 @@ Pacman/
 3. Não requer instalação de pacotes, compilação ou servidores Node.js!
 
 ## 🎮 Também disponível:  
-O projeto também está diponível via [GitHub Pages](felipefmedeiros.github.io/Pacman). Acesse e jogue!
+O projeto também está diponível via [GitHub Pages](https://felipefmedeiros.github.io/Pacman/). Acesse e jogue!
